@@ -1,3 +1,5 @@
+wait(5)
+
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("Bonus X hub", "DarkTheme")
 
@@ -9,12 +11,10 @@ Section:NewButton("Teleport", "Teleport ALT", function()
 wait(0.1)
 local baseplate = Instance.new("Part")
 baseplate.Parent = workspace
-baseplate.Size = Vector3.new(80,1,80)
+baseplate.Size = Vector3.new(1,1,1)
 baseplate.Anchored = true
 baseplate.Name = "Baseplate"
 baseplate.Position = game.Players.LocalPlayer.Character.HumanoidRootPart.Position + Vector3.new(0,-2,0)
-wait(0.5)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(13501.9141, -489.926941, 811.06604, -0.00963467918, 5.9861569e-09, -0.999953568, 3.5629224e-08, 1, 5.6431424e-09, 0.999953568, -3.55732013e-08, -0.00963467918)
 end)
 
 local Tab = Window:NewTab("Main acc")
@@ -29,8 +29,6 @@ baseplate.Size = Vector3.new(80,1,80)
 baseplate.Anchored = true
 baseplate.Name = "Baseplate"
 baseplate.Position = game.Players.LocalPlayer.Character.HumanoidRootPart.Position + Vector3.new(0,-2,0)
-wait(0.5)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(13499.3467, -489.178223, 811.011841, 0.0148094753, 9.72996794e-09, -0.999890327, -4.56203679e-08, 1, 9.05534758e-09, 0.999890327, 4.54812579e-08, 0.0148094753)
 end)
 
 local Tab = Window:NewTab("TeleportHub")
